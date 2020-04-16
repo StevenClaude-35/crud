@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "angular8tutorial": {
@@ -24,9 +24,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min"
             ],
-            "scripts": []
+            "scripts": [
+              // "node_modules/jquery/dist/jquery.js",
+              // "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular8tutorial"
+    }
+  },
+  "defaultProject": "angular8tutorial",
+  "cli": {
+    "analytics": "533528f8-d9aa-492b-8a61-6e91fa8e69e2"
+  }
 }
